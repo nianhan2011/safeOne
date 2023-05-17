@@ -79,17 +79,17 @@ int main(void)
 	delay_ms(100);
 	extern int get_adc0_val();
 	int temp0 = 0;
-	while (temp0 < 40)
-	{
-		if (get_adc0_val() == 0)
-		{
-			Control1_OFF;
-			while (1)
-				;
-		}
-		delay_ms(50);
-		temp0++;
-	}
+	// while (temp0 < 40)
+	// {
+	// 	if (get_adc0_val() == 0)
+	// 	{
+	// 		Control1_OFF;
+	// 		while (1)
+	// 			;
+	// 	}
+	// 	delay_ms(50);
+	// 	temp0++;
+	// }
 	dlzsd();
 	GENERAL_TIM_Init();
 	UARTx_Config();

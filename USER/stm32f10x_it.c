@@ -401,27 +401,27 @@ void GENERAL_TIM_IRQHandler(void) // 定时器中断
 		/***********10.25更新***************************/
 		// extern u8 gd_jiesuo_key;//新增gd计时
 
-//		if (open_fly_mode == 1)
-//		{
-//			if (fly_mode_cnt == 1000)
-//			{
-//				fly_mode_cnt = 0;
-//				open_fly_mode = 0;
-//				nb_time = 10;
-//			}
-//			else
-//			{
-//				fly_mode_cnt++;
-//			}
-//		}
+		//		if (open_fly_mode == 1)
+		//		{
+		//			if (fly_mode_cnt == 1000)
+		//			{
+		//				fly_mode_cnt = 0;
+		//				open_fly_mode = 0;
+		//				nb_time = 10;
+		//			}
+		//			else
+		//			{
+		//				fly_mode_cnt++;
+		//			}
+		//		}
 
 		// if (baojing_kakou_timer)
 		// {
 		// 	if (baojing_kakou_time_cnt == 800)
 		// 	{
-		// 		baojing_kakou_time_cnt = 0; 
+		// 		baojing_kakou_time_cnt = 0;
 
-		// 	  extern void waist_buckle_warn(); 
+		// 	  extern void waist_buckle_warn();
 		// 		waist_buckle_warn();
 		// 	}
 		// 	else
@@ -458,20 +458,45 @@ void GENERAL_TIM_IRQHandler(void) // 定时器中断
 				shangsuo_delay = 1;
 				// LED1_OFF;
 				// LED2_ON;
-				ssbzw_flag = 1;
+				// ssbzw_flag = 1;
 
 				extern void weixiangd(); // 新增危险高度语音
 				weixiangd();
-				key1_flag = 1; // 上锁状态
-				ssbzw_flag = 1;
-				chezaikongtiao_calculate();
+				// key1_flag = 1; // 上锁状态
+				// ssbzw_flag = 1;
+				// chezaikongtiao_calculate();
 
-				NB_TCP_TX();
-				shangsuo_flag = 1;
+				// NB_TCP_TX();
+				// shangsuo_flag = 1;
 			}
 		}
 
-		if (gaoduyuyin_flag == 1)
+		if (shangsuo_delay == 1)
+		{
+			time_shangsuotimer_buf++;
+		}
+		if (time_shangsuotimer_buf == 300) // 3s延时 YF修改成2秒
+		{
+			shangsuo_delay = 0;
+			time_shangsuotimer_buf = 0;
+			extern u8 motor_flag;
+			motor_flag = 1;
+
+			// if (gaoduyuyin_flag == 1 && peizhi[3] == 1)
+			// {
+			LED1_OFF;
+			LED2_ON;
+			key1_flag = 1; // 上锁状态
+			ssbzw_flag = 1;
+			chezaikongtiao_calculate();
+
+			NB_TCP_TX();
+			shangsuo_flag = 1;
+			// 上锁
+
+		}
+
+		if (gaoduyuyin_flag == 1 && peizhi[3] == 0)
 		{
 			gaoduyuyin_cnt++;
 		}
@@ -481,31 +506,14 @@ void GENERAL_TIM_IRQHandler(void) // 定时器中断
 			weixiangd();
 			gaoduyuyin_cnt = 0;
 		}
-		if (shangsuo_delay == 1)
-		{
-			time_shangsuotimer_buf++;
-		}
-		if (time_shangsuotimer_buf == 200) // 3s延时 YF修改成2秒
-		{
-			shangsuo_delay = 0;
-			time_shangsuotimer_buf = 0;
-			extern u8 motor_flag;
-			motor_flag = 1;
 
-			if (peizhi[3] == 1)
-			{
-				LED1_OFF;
-				LED2_ON; // 上锁
-				ssbzw_flag = 1;
-				shangsuo_flag = 1;
-				//			shangsuo_flag=1;
-			}
-			//			else if(peizhi[3]==0)
-			//        {
-			//				  LED1_OFF;
-			//			    LED2_OFF;//上锁
-			//
-			//				}
+		if (gaoduyuyin_flag == 1 && peizhi[3] == 1)
+		{
+			gaoduyuyin_flag = 0;
+			// LED1_OFF;
+			// LED2_ON; // 上锁
+			ssbzw_flag = 1;
+			shangsuo_flag = 1;
 		}
 
 		if (busy_flag)

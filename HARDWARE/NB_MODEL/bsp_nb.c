@@ -206,8 +206,8 @@ void NB_TCP_CONNECT_1(){
 //						printf("AT+ZIPOPEN=1,0,103.46.128.49,21988\r\n");//贝贝花生壳
 //			      printf("AT+ZIPOPEN=1,0,103.46.128.44,50254\r\n");//吴昌原花生壳
 //						printf("AT+ZIPOPEN=1,0,103.46.128.21,12657\r\n");//孙华龙花生壳
-//						printf("AT+ZIPOPEN=1,0,115.236.153.174,20166\r\n");
-            printf("AT+ZIPOPEN=1,0,www.jsald.cn,8068\r\n");//朱工
+						printf("AT+ZIPOPEN=1,0,115.236.153.174,20166\r\n");
+//            printf("AT+ZIPOPEN=1,0,www.jsald.cn,8068\r\n");//朱工
 //						printf("AT+ZIPOPEN=1,0,124.70.218.101,8068\r\n");//朱工
 						nb_time_flag=0;
 						connect_on_cnt=0;
