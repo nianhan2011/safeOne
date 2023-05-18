@@ -166,8 +166,12 @@ void Key_GPIO_Config(void)
 uint8_t Key_Scan(GPIO_TypeDef* GPIOx,uint16_t GPIO_Pin)
 {			
 	if(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin) == KEY_OFF )  
-	{	   
-		return 	KEY_ON;	 
+	{	  
+		delay(20);
+		if (GPIO_ReadInputDataBit(GPIOx, GPIO_Pin) == KEY_OFF)
+		{
+			return KEY_ON;
+		}
 	}
 	else
 		return KEY_OFF;
