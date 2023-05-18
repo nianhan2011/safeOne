@@ -2,7 +2,7 @@
 ..\obj\stm32f10x_it.o: stm32f10x_it.h
 ..\obj\stm32f10x_it.o: stm32f10x.h
 ..\obj\stm32f10x_it.o: ..\CORE\core_cm3.h
-..\obj\stm32f10x_it.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\stm32f10x_it.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\stm32f10x_it.o: system_stm32f10x.h
 ..\obj\stm32f10x_it.o: stm32f10x_conf.h
 ..\obj\stm32f10x_it.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -33,12 +33,12 @@
 ..\obj\stm32f10x_it.o: ..\SYSTEM\sys\sys.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\NB_MODEL\nb_model.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\NB_MODEL\bsp_nb.h
-..\obj\stm32f10x_it.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\string.h
+..\obj\stm32f10x_it.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\string.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\Key\bsp_key.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\Led\bsp_led.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\GeneralTim\bsp_GeneralTim.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\usart\bsp_usart5.h
-..\obj\stm32f10x_it.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\stm32f10x_it.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdio.h
 ..\obj\stm32f10x_it.o: rl_control.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\adc\bsp_adc.h
 ..\obj\stm32f10x_it.o: ..\HARDWARE\usart\ble.h

@@ -3,7 +3,7 @@
 ..\obj\nb_model.o: ..\SYSTEM\sys\sys.h
 ..\obj\nb_model.o: ..\USER\stm32f10x.h
 ..\obj\nb_model.o: ..\CORE\core_cm3.h
-..\obj\nb_model.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\nb_model.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\nb_model.o: ..\USER\system_stm32f10x.h
 ..\obj\nb_model.o: ..\USER\stm32f10x_conf.h
 ..\obj\nb_model.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -31,9 +31,9 @@
 ..\obj\nb_model.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\nb_model.o: ..\STM32F10x_FWLib\inc\misc.h
 ..\obj\nb_model.o: ..\HARDWARE\NB_MODEL\bsp_nb.h
-..\obj\nb_model.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\nb_model.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\nb_model.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\string.h
+..\obj\nb_model.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdio.h
+..\obj\nb_model.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdlib.h
+..\obj\nb_model.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\string.h
 ..\obj\nb_model.o: ..\SYSTEM\usart\usart.h
 ..\obj\nb_model.o: ..\HARDWARE\usart\ble.h
 ..\obj\nb_model.o: ..\USER\common.h

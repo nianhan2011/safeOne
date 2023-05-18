@@ -2,7 +2,7 @@
 ..\obj\bsp_key.o: ..\HARDWARE\Key\bsp_key.h
 ..\obj\bsp_key.o: ..\USER\stm32f10x.h
 ..\obj\bsp_key.o: ..\CORE\core_cm3.h
-..\obj\bsp_key.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\bsp_key.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\bsp_key.o: ..\USER\system_stm32f10x.h
 ..\obj\bsp_key.o: ..\USER\stm32f10x_conf.h
 ..\obj\bsp_key.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -29,3 +29,5 @@
 ..\obj\bsp_key.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 ..\obj\bsp_key.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\bsp_key.o: ..\STM32F10x_FWLib\inc\misc.h
+..\obj\bsp_key.o: ..\SYSTEM\delay\delay.h
+..\obj\bsp_key.o: ..\SYSTEM\sys\sys.h

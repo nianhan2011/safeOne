@@ -2,7 +2,7 @@
 ..\obj\rl_control.o: rl_control.h
 ..\obj\rl_control.o: stm32f10x.h
 ..\obj\rl_control.o: ..\CORE\core_cm3.h
-..\obj\rl_control.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\rl_control.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\rl_control.o: system_stm32f10x.h
 ..\obj\rl_control.o: stm32f10x_conf.h
 ..\obj\rl_control.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

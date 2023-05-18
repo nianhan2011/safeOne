@@ -2,7 +2,7 @@
 ..\obj\main.o: ..\SYSTEM\sys\sys.h
 ..\obj\main.o: ..\USER\stm32f10x.h
 ..\obj\main.o: ..\CORE\core_cm3.h
-..\obj\main.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\main.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\main.o: ..\USER\system_stm32f10x.h
 ..\obj\main.o: ..\USER\stm32f10x_conf.h
 ..\obj\main.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -31,8 +31,8 @@
 ..\obj\main.o: ..\STM32F10x_FWLib\inc\misc.h
 ..\obj\main.o: ..\HARDWARE\GeneralTim\bsp_GENERALTim.h
 ..\obj\main.o: ..\SYSTEM\delay\delay.h
-..\obj\main.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\string.h
-..\obj\main.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\main.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\string.h
+..\obj\main.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdio.h
 ..\obj\main.o: ..\HARDWARE\NB_MODEL\nb_model.h
 ..\obj\main.o: ..\HARDWARE\NB_MODEL\bsp_nb.h
 ..\obj\main.o: ..\HARDWARE\Key\bsp_key.h

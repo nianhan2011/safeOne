@@ -2,7 +2,7 @@
 ..\obj\flash.o: ..\STM32F10x_FWLib\inc\stm32f10x_flash.h
 ..\obj\flash.o: ..\USER\stm32f10x.h
 ..\obj\flash.o: ..\CORE\core_cm3.h
-..\obj\flash.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\flash.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\flash.o: ..\USER\system_stm32f10x.h
 ..\obj\flash.o: ..\USER\stm32f10x_conf.h
 ..\obj\flash.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -32,4 +32,4 @@
 ..\obj\flash.o: flash.h
 ..\obj\flash.o: ..\HARDWARE\usart\ble.h
 ..\obj\flash.o: ..\USER\common.h
-..\obj\flash.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\string.h
+..\obj\flash.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\string.h

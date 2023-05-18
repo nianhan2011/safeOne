@@ -3,7 +3,7 @@
 ..\obj\bsp_nb.o: ..\SYSTEM\sys\sys.h
 ..\obj\bsp_nb.o: ..\USER\stm32f10x.h
 ..\obj\bsp_nb.o: ..\CORE\core_cm3.h
-..\obj\bsp_nb.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\bsp_nb.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\bsp_nb.o: ..\USER\system_stm32f10x.h
 ..\obj\bsp_nb.o: ..\USER\stm32f10x_conf.h
 ..\obj\bsp_nb.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h
@@ -30,8 +30,8 @@
 ..\obj\bsp_nb.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 ..\obj\bsp_nb.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\bsp_nb.o: ..\STM32F10x_FWLib\inc\misc.h
-..\obj\bsp_nb.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdio.h
-..\obj\bsp_nb.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\string.h
+..\obj\bsp_nb.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdio.h
+..\obj\bsp_nb.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\string.h
 ..\obj\bsp_nb.o: ..\SYSTEM\delay\delay.h
 ..\obj\bsp_nb.o: ..\HARDWARE\NB_MODEL\nb_model.h
 ..\obj\bsp_nb.o: ..\HARDWARE\GeneralTim\bsp_GENERALTim.h

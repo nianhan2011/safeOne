@@ -1,7 +1,7 @@
 ..\obj\iwdg.o: iwdg.c
 ..\obj\iwdg.o: stm32f10x.h
 ..\obj\iwdg.o: ..\CORE\core_cm3.h
-..\obj\iwdg.o: C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\iwdg.o: D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin\..\include\stdint.h
 ..\obj\iwdg.o: system_stm32f10x.h
 ..\obj\iwdg.o: stm32f10x_conf.h
 ..\obj\iwdg.o: ..\STM32F10x_FWLib\inc\stm32f10x_adc.h

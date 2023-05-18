@@ -3,30 +3,92 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.24.2.86
-Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: f User, f, LIC=32B1Q-NX5BR-PCCJ8-3IR04-TD5AZ-0SKWF
+IDE-Version: ¦ÌVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 AOC, 1, LIC=ATTQ1-CH1S9-9U34U-S9MEB-U2XWN-MTLAA
  
 Tool Versions:
 Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
-Toolchain Path:  C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin
-C Compiler:      Armcc.exe V5.06 update 5 (build 528)
-Assembler:       Armasm.exe V5.06 update 5 (build 528)
-Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
-Library Manager: ArmAr.exe V5.06 update 5 (build 528)
-Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+Toolchain Path:  D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
 CPU DLL:         SARMCM3.DLL V5.38.0.0
 Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-C:\WorkCopy\safesafe\2023-5-17-16-55\USER\ModBus_Master.uvprojx
-Project File Date:  05/17/2023
+D:\WorkCopy\safeone\safeOne\USER\ModBus_Master.uvprojx
+Project File Date:  05/18/2023
 
 <h2>Output:</h2>
-*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\EmbeddedSysDev\Keil\ARM\ARMCC\Bin'
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\EmbeddedSysDev\KEIL\ARM\Compailer\Bin'
 Build target 'ModBus_Master'
+compiling system_stm32f10x.c...
+compiling delay.c...
+compiling bsp_adc.c...
+compiling bsp_GeneralTim.c...
+..\HARDWARE\GeneralTim\bsp_GeneralTim.c(215): warning:  #940-D: missing return statement at end of non-void function "get_adc0_val" 
+  }
+..\HARDWARE\GeneralTim\bsp_GeneralTim.c: 1 warning, 0 errors
+compiling height.c...
+..\HARDWARE\height\height.h(6): warning:  #1295-D: Deprecated declaration set_height_zero - give arg types
+  void set_height_zero();
+..\HARDWARE\height\height.h(7): warning:  #1295-D: Deprecated declaration usart5_deal - give arg types
+  void usart5_deal();
+..\HARDWARE\height\height.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\height\height.c(183): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\height\height.c(90): warning:  #177-D: function "Usart_SendString"  was declared but never referenced
+  static void Usart_SendString( USART_TypeDef * pUSARTx, uint8_t *str)
+..\HARDWARE\height\height.c: 5 warnings, 0 errors
+compiling bsp_usart5.c...
+compiling main.c...
+flash.h(4): warning:  #1295-D: Deprecated declaration write_to_flash - give arg types
+  void write_to_flash();
+flash.h(5): warning:  #1295-D: Deprecated declaration read_from_flash - give arg types
+  void read_from_flash();
+..\HARDWARE\height\height.h(6): warning:  #1295-D: Deprecated declaration set_height_zero - give arg types
+  void set_height_zero();
+..\HARDWARE\height\height.h(7): warning:  #1295-D: Deprecated declaration usart5_deal - give arg types
+  void usart5_deal();
+..\HARDWARE\height\height.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(102): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i = 0;
+main.c(220): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if (bat_val >= 0 && bat_val < 10 && didian_flag == 0)
+main.c(243): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if (bat_val >= 0 && bat_val < 10)
+main.c(207): warning:  #177-D: variable "lw_init_flag"  was declared but never referenced
+  static u8 lw_init_flag = 0;
+main.c: 9 warnings, 0 errors
+compiling bsp_nb.c...
+..\HARDWARE\NB_MODEL\bsp_nb.c(165): warning:  #177-D: variable "error_cnt"  was declared but never referenced
+  			static u16 error_cnt;
+..\HARDWARE\NB_MODEL\bsp_nb.c: 1 warning, 0 errors
+compiling nb_model.c...
+..\USER\flash.h(4): warning:  #1295-D: Deprecated declaration write_to_flash - give arg types
+  void write_to_flash();
+..\USER\flash.h(5): warning:  #1295-D: Deprecated declaration read_from_flash - give arg types
+  void read_from_flash();
+..\HARDWARE\NB_MODEL\nb_model.c(541): warning:  #1295-D: Deprecated declaration set_mpu6050_init - give arg types
+  extern void set_mpu6050_init();
+..\HARDWARE\NB_MODEL\nb_model.c(554): warning:  #177-D: variable "pilao_flag"  was declared but never referenced
+  	static u8 pilao_flag = 0;
+..\HARDWARE\NB_MODEL\nb_model.c(760): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(temp1>=0&&temp1<=9){
+..\HARDWARE\NB_MODEL\nb_model.c(765): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(temp2>=0&&temp2<=9){
+..\HARDWARE\NB_MODEL\nb_model.c(919): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+  				strncpy(jizhan_data,nb_data+num_1+1,(num_5-num_1-2));
+..\HARDWARE\NB_MODEL\nb_model.c(928): warning:  #177-D: variable "s"  was declared but never referenced
+  			char *s = rx_temp;
+..\HARDWARE\NB_MODEL\nb_model.c: 8 warnings, 0 errors
 compiling stm32f10x_it.c...
 ..\HARDWARE\height\height.h(6): warning:  #1295-D: Deprecated declaration set_height_zero - give arg types
   void set_height_zero();
@@ -35,24 +97,52 @@ compiling stm32f10x_it.c...
 ..\HARDWARE\height\height.h(10): warning:  #1-D: last line of file ends without a newline
   #endif
 stm32f10x_it.c: 3 warnings, 0 errors
+compiling sys.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling rl_control.c...
+compiling bsp_key.c...
+..\HARDWARE\Key\bsp_key.c(188): warning:  #940-D: missing return statement at end of non-void function "Key_Scan" 
+  }
+..\HARDWARE\Key\bsp_key.c: 1 warning, 0 errors
+compiling flash.c...
+flash.h(4): warning:  #1295-D: Deprecated declaration write_to_flash - give arg types
+  void write_to_flash();
+flash.h(5): warning:  #1295-D: Deprecated declaration read_from_flash - give arg types
+  void read_from_flash();
+flash.c: 2 warnings, 0 errors
+compiling iwdg.c...
+compiling bsp_led.c...
+compiling usart.c...
+compiling stm32f10x_gpio.c...
+compiling misc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_sdio.c...
 linking...
-Program Size: Code=33228 RO-data=508 RW-data=712 ZI-data=6728  
+Program Size: Code=33268 RO-data=508 RW-data=712 ZI-data=6728  
 FromELF: creating hex file...
-"..\OBJ\GGX-FWQ-3630-BLE-0911.axf" - 0 Error(s), 3 Warning(s).
+"..\OBJ\GGX-FWQ-3630-BLE-0911.axf" - 0 Error(s), 30 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: Keil
-                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
-                Keil.STM32F1xx_DFP.2.2.0
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
                 STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
-  .\RTE\_ModBus_Master
-  C:\EmbeddedSysDev\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+  D:/EmbeddedSysDev/KEIL/Keil/STM32F1xx_DFP/2.3.0/Device/Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
